@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <h2>User Data Table</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>ID Number</th>
+          <th>Picture</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; let i = index">
+          <td>{{ user.name }}</td>
+          <td>{{ user.phone }}</td>
+          <td>{{ user.idNumber }}</td>
+          <td><img [src]="user.picture" alt="User Picture" width="50"></td>
+          <td>
+            <button class="btn btn-warning btn-sm" (click)="editUser(i)">Edit</button>
+            <button class="btn btn-danger btn-sm" (click)="deleteUser(i)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

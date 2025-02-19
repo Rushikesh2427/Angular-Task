@@ -1,0 +1,17 @@
+{
+    "users": [
+      {
+        "name": "Rohit",
+        "phone": "111 111 1111",
+        "idNumber": "1001",
+        "profile": "Profile-03.jpg"
+      },
+      {
+        "name": "Rushi",
+        "phone": "111 111 1111",
+        "idNumber": "1002",
+        "profile": "Profile-03.jpg"
+      }
+    ]
+  }
+    
